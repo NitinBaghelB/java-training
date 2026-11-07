@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Training Institute | Premier Java Training Institute in Ghaziabad</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0b132b',
+                            900: '#070b19',
+                            950: '#03050d',
+                        },
+                        java: {
+                            orange: '#e76f51',
+                            blue: '#3a86ef',
+                            cyan: '#00f5d4',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #e76f51 0%, #3a86ef 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(58, 134, 239, 0.3);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(58, 134, 239, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-navy-950 text-slate-200 font-sans antialiased min-h-screen flex flex-col selection:bg-java-blue selection:text-white">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-navy-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo & Name -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-java-orange to-java-blue flex items-center justify-center text-white shadow-lg shadow-java-orange/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-brands fa-java text-2xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold tracking-tight text-white group-hover:text-java-orange transition-colors">Java Training  <span class="text-java-blue">Institute</span></span>
+                    <span class="text-xs text-slate-400 font-mono">Master Enterprise Coding</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#home" class="hover:text-java-orange transition-colors">Home</a>
+                <a href="#courses" class="hover:text-java-orange transition-colors">Courses</a>
+                <a href="#highlights" class="hover:text-java-orange transition-colors">Why Choose Us</a>
+                <a href="#location" class="hover:text-java-orange transition-colors">Location</a>
+                <a href="#contact" class="px-4 py-2 rounded-lg bg-java-blue/10 text-java-blue hover:bg-java-blue hover:text-white border border-java-blue/30 transition-all">Enroll Now</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2 rounded-lg focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-slate-200">Home</a>
+            <a href="#courses" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-slate-200">Courses</a>
+            <a href="#highlights" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-slate-200">Why Choose Us</a>
+            <a href="#location" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-slate-200">Location</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md bg-java-blue text-white text-center font-medium">Enroll Now</a>
+        </div>
+    </header>
+
+    <!-- Main Content Body -->
+    <main class="flex-grow">
+        
+        <!-- Hero Section -->
+        <section id="home" class="relative py-20 lg:py-32 overflow-hidden border-b border-slate-800/50">
+            <!-- Background Glow Details -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-java-blue/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute top-1/3 left-1/3 w-64 h-64 bg-java-orange/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Hero Text -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700 text-xs text-java-cyan font-mono mb-2">
+                            <span class="w-2 h-2 rounded-full bg-java-cyan animate-pulse"></span>
+                            Admissions Open for Fresh Batches 2026
+                        </div>
+                        
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                            Build Your Software Career with <span class="gradient-text">Hands-On Java</span> Expertise
+                        </h1>
+
+                        <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            Transform from a fresh graduate into an industry-ready Java Developer. We offer practical training, live project exposure, and comprehensive guidance on full-stack Java development.
+                        </p>
+
+                        <!-- CTA Action Buttons -->
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                            <a href="#courses" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-java-orange to-red-500 hover:from-java-orange/90 hover:to-red-600 text-white font-semibold shadow-lg shadow-java-orange/25 transition-all text-center">
+                                Explore Courses <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                            <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold transition-all text-center">
+                                Book Free Demo
+                            </a>
+                        </div>
+
+                        <!-- Stats Snippet -->
+                        <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
+                            <div>
+                                <div class="text-2xl font-bold text-white">100%</div>
+                                <div class="text-xs text-slate-400">Practical Focus</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-white">Live</div>
+                                <div class="text-xs text-slate-400">Project Training</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-white">1-on-1</div>
+                                <div class="text-xs text-slate-400">Mentorship</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Interactive Visual Code Box -->
+                    <div class="lg:col-span-5">
+                        <div class="glass-card rounded-2xl p-4 sm:p-6 shadow-2xl relative">
+                            <div class="flex items-center justify-between pb-4 border-b border-slate-800 font-mono text-xs text-slate-400">
+                                <div class="flex gap-2">
+                                    <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                                    <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                                    <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                                </div>
+                                <span>StudentCareerLauncher.java</span>
+                            </div>
+                            <pre class="mt-4 font-mono text-xs sm:text-sm text-slate-300 overflow-x-auto leading-relaxed">
+<span class="text-purple-400">public class</span> <span class="text-yellow-300">JavaTechAcademy</span> {
+    <span class="text-purple-400">public static void</span> <span class="text-blue-400">main</span>(String[] args) {
+        Developer student = <span class="text-purple-400">new</span> Developer();
+        
+        student.learn(<span class="text-emerald-400">"Core & Advanced Java"</span>);
+        student.buildLiveProjects();
+        student.getJobReady();
+
+        System.out.println(<span class="text-emerald-400">"Career Launched Successfully! 🚀"</span>);
+    }
+}</pre>
+                            <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                                <span class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Compile Success</span>
+                                <span class="text-java-cyan">Execution Time: 0ms</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Offered Section -->
+        <section id="courses" class="py-20 bg-navy-900/50 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-mono text-java-orange uppercase tracking-widest mb-2">Curriculum Built For Real Work</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Comprehensive Java Courses</h3>
+                    <p class="text-slate-400 mt-4 text-sm sm:text-base">Designed carefully to take you step-by-step from core syntax concepts to enterprise enterprise framework mastery.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Course Card 1: Core Java -->
+                    <div class="glass-card rounded-2xl p-8 flex flex-col justify-between hover:translate-y-[-4px] transition-all duration-300">
+                        <div>
+                            <div class="flex items-center justify-between mb-6">
+                                <span class="px-3 py-1 rounded-full bg-java-orange/10 text-java-orange text-xs font-mono border border-java-orange/20">Beginner to Intermediate</span>
+                                <i class="fa-solid fa-code text-2xl text-slate-500"></i>
+                            </div>
+
+                            <h4 class="text-2xl font-bold text-white mb-3">Core Java Fundamentals</h4>
+                            <p class="text-slate-400 text-sm mb-6">Master the foundation of Java programming, object-oriented principles, logic building, and efficient exception control.</p>
+
+                            <div class="space-y-3 font-mono text-sm">
+                                <div class="flex items-center gap-3 text-slate-300">
+                                    <i class="fa-solid fa-circle-check text-java-orange text-xs"></i>
+                                    <span>OOPs Concepts (Inheritance, Polymorphism)</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-slate-300">
+                                    <i class="fa-solid fa-circle-check text-java-orange text-xs"></i>
+                                    <span>Data Types, Operators & Control Flow</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-slate-300">
+                                    <i class="fa-solid fa-circle-check text-java-orange text-xs"></i>
+                                    <span>Exception Handling & Debugging</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-slate-300">
+                                    <i class="fa-solid fa-circle-check text-java-orange text-xs"></i>
+                                    <span>Java Collections Framework & Data Structures</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-slate-300">
+                                    <i class="fa-solid fa-circle-check text-java-orange text-xs"></i>
+                                    <span>Algorithmic Logic Building</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between">
+                            <span class="text-xs text-slate-400">Duration: 6-8 Weeks</span>
+                            <a href="#contact" onclick="setCourseSelection('Core Java')" class="text-sm text-java-orange hover:text-white font-semibold flex items-center gap-1">
+                                Request Syllabus <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 2: Advanced Java -->
+                    <div class="glass-card rounded-2xl p-8 flex flex-col justify-between hover:translate-y-[-4px] transition-all duration-300 border-java-blue/40 glow-effect">
+                        <div>
+                            <div class="flex items-center justify-between mb-6">
+                                <span class="px-3 py-1 rounded-full bg-java-blue/10 text-java-blue text-xs font-mono border border-java-blue/30">Advanced Enterprise Track</span>
+                                <i class="fa-solid fa-layer-group text-2xl text-java-blue"></i>
+                            </div>
+
+                            <h4 class="text-2xl font-bold text-white mb-3">Advanced Java & Frameworks</h4>
+                            <p class="text-slate-400 text-sm mb-6">Build scalable backend microservices, enterprise web applications, and work with modern database ORMs and cloud tools.</p>
+
+                            <div class="space-y-3 font-mono text-sm">
+                                <div class="flex items-center gap-3 text-slate-300">
+                                    <i class="fa-solid fa-circle-check text-java-blue text-xs"></i>
+                                    <span>Spring Framework & Spring Boot</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-slate-300">
+                                    <i class="fa-solid fa-circle-check text-java-blue text-xs"></i>
+                                    <span>Hibernate ORM & Database Persistence</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-slate-300">
+                                    <i class="fa-solid fa-circle-check text-java-blue text-xs"></i>
+                                    <span>JDBC Architecture & Connectivity</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-slate-300">
+                                    <i class="fa-solid fa-circle-check text-java-blue text-xs"></i>
+                                    <span>Multithreading & Concurrency Control</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-slate-300">
+                                    <i class="fa-solid fa-circle-check text-java-blue text-xs"></i>
+                                    <span>RESTful Web Services & Docker Containerization</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between">
+                            <span class="text-xs text-slate-400">Duration: 10-12 Weeks</span>
+                            <a href="#contact" onclick="setCourseSelection('Advanced Java')" class="text-sm text-java-blue hover:text-white font-semibold flex items-center gap-1">
+                                Request Syllabus <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights / Why Choose Us Section -->
+        <section id="highlights" class="py-20 border-t border-slate-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-mono text-java-blue uppercase tracking-widest mb-2">Key Highlights</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Why Learn With Us?</h3>
+                    <p class="text-slate-400 mt-4 text-sm sm:text-base">We bridge the gap between academic theory and real-world software engineering expectations.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Highlight 1 -->
+                    <div class="p-6 rounded-2xl bg-navy-900 border border-slate-800 hover:border-slate-700 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-java-orange/10 text-java-orange flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Live Project Training</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Work directly on industrial mini-projects and real-world backend services. Learn debugging, code formatting, and Git workflow firsthand.
+                        </p>
+                    </div>
+
+                    <!-- Highlight 2 -->
+                    <div class="p-6 rounded-2xl bg-navy-900 border border-slate-800 hover:border-slate-700 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-java-blue/10 text-java-blue flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Fresh Graduate Focus</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Curriculum customized specifically for B.Tech, BCA, MCA, and fresh IT graduates aiming to clear technical interview rounds confidently.
+                        </p>
+                    </div>
+
+                    <!-- Highlight 3 -->
+                    <div class="p-6 rounded-2xl bg-navy-900 border border-slate-800 hover:border-slate-700 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-java-cyan/10 text-java-cyan flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-terminal"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Practical Coding Drills</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Daily interactive coding challenges, technical interview mock tests, and systematic problem-solving sessions.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Location Info Section -->
+        <section id="location" class="py-20 bg-navy-900/50 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Left: Institute Info & Map Details -->
+                    <div class="lg:col-span-6 space-y-8">
+                        <div>
+                            <h2 class="text-xs font-mono text-java-orange uppercase tracking-widest mb-2">Visit Our Classroom</h2>
+                            <h3 class="text-3xl font-extrabold text-white">Location & Contact</h3>
+                            <p class="text-slate-400 mt-2 text-sm">Drop by our training facility in Ghaziabad for face-to-face consultation.</p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <!-- Address Item -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-java-orange shrink-0 mt-1">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Institute Address</h4>
+                                    <p class="text-slate-400 text-sm leading-relaxed">
+                                        HN-40, Mansarovar Park Rd, near MR farm house,<br>
+                                        Lal Kuan, Ghaziabad,<br>
+                                        Uttar Pradesh 201002
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Phone Item -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-java-blue shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Inquiry Phone</h4>
+                                    <p class="text-slate-400 text-sm">+91 9315426013</p>
+                                </div>
+                            </div>
+
+                            <!-- Email Item -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-java-cyan shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Email Us</h4>
+                                    <p class="text-slate-400 text-sm">javagguide@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Embedded Responsive Google Map Visual Container -->
+                        <div class="rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 h-64 relative">
+                            <iframe 
+                                class="w-full h-full filter grayscale contrast-125 opacity-80 hover:opacity-100 transition-opacity"
+                                src="https://maps.google.com/maps?q=Mansarovar%20Park%20Lal%20Kuan%20Ghaziabad&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                                frameborder="0" 
+                                scrolling="no" 
+                                marginheight="0" 
+                                marginwidth="0"
+                                title="Institute Location Map">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Right: Admission Inquiry Form -->
+                    <div class="lg:col-span-6" id="contact">
+                        <div class="glass-card rounded-2xl p-8">
+                            <h3 class="text-2xl font-bold text-white mb-2">Book a Free Counselling Session</h3>
+                            <p class="text-slate-400 text-sm mb-6">Leave your details and our senior instructor will contact you shortly.</p>
+
+                            <!-- Notification Message Container -->
+                            <div id="form-message" class="hidden mb-6 p-4 rounded-xl text-sm font-medium"></div>
+
+                            <form id="inquiry-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-400 mb-1">Full Name</label>
+                                    <input type="text" required placeholder="e.g. Rahul Sharma" class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-slate-800 text-white focus:outline-none focus:border-java-blue transition-colors text-sm">
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-mono text-slate-400 mb-1">Phone Number</label>
+                                        <input type="tel" required placeholder="+91 90000 00000" class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-slate-800 text-white focus:outline-none focus:border-java-blue transition-colors text-sm">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-mono text-slate-400 mb-1">Course Interested</label>
+                                        <select id="course-select" class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-slate-800 text-white focus:outline-none focus:border-java-blue transition-colors text-sm">
+                                            <option value="Both / Not Sure">Core + Advanced Java (Combined)</option>
+                                            <option value="Core Java">Core Java Only</option>
+                                            <option value="Advanced Java">Advanced Java & Spring Boot</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-400 mb-1">Qualification / Status</label>
+                                    <input type="text" placeholder="e.g. B.Tech CS 4th Year / Fresh Graduate" class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-slate-800 text-white focus:outline-none focus:border-java-blue transition-colors text-sm">
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-400 mb-1">Any Questions? (Optional)</label>
+                                    <textarea rows="3" placeholder="Tell us about your background or timing preference..." class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-slate-800 text-white focus:outline-none focus:border-java-blue transition-colors text-sm resize-none"></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-java-blue to-cyan-500 hover:from-java-blue/90 hover:to-cyan-600 text-white font-semibold shadow-lg shadow-java-blue/20 transition-all text-sm">
+                                    Submit Inquiry
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 border-t border-slate-900 py-10 text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <i class="fa-brands fa-java text-java-orange text-lg"></i>
+                <span class="text-slate-300 font-semibold">JavaTech Academy</span>
+                <span>— Sanjay Nagar, Lal Kuan, Ghaziabad</span>
+            </div>
+            <div>
+                © <span id="year"></span> JavaTech Academy. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Set dynamic year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Close mobile menu when clicking menu links
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Pre-select course in dropdown when clicking specific syllabus button
+        function setCourseSelection(courseName) {
+            const selectEl = document.getElementById('course-select');
+            if (selectEl) {
+                selectEl.value = courseName;
+            }
+        }
+
+        // Form Submission Handler Simulation
+async function handleFormSubmit(e) {
+    e.preventDefault();
+    
+    const msgBox = document.getElementById('form-message');
+    const form = document.getElementById('inquiry-form');
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    const originalBtnText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = "<i class='fa-solid fa-spinner fa-spin mr-2'></i> Sending...";
+
+    const formData = new FormData(form);
+    // Add your Web3Forms Access Key
+    formData.append("access_key", "YOUR_WEB3FORMS_ACCESS_KEY");
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            msgBox.className = "mb-6 p-4 rounded-xl text-sm font-medium bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 block";
+            msgBox.innerHTML = "<i class='fa-solid fa-circle-check mr-2'></i> Thank you! Your inquiry has been received. Our team will contact you shortly.";
+            form.reset();
+        } else {
+            throw new Error(result.message);
+        }
+    } catch (error) {
+        msgBox.className = "mb-6 p-4 rounded-xl text-sm font-medium bg-rose-500/10 border border-rose-500/30 text-rose-400 block";
+        msgBox.innerHTML = "<i class='fa-solid fa-circle-exclamation mr-2'></i> Oops! Something went wrong. Please try again later.";
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+    }
+}
+    </script>
+</body>
+</html>
